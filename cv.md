@@ -48,3 +48,10 @@ const getCount = (inputStr) => {
 RS School stage 0\
 "Understanding Typescript" on udemy.com\
 "The Complete JavaScript Course 2022: From Zero to Expert!" on udemy.com
+
+##### :fox_face:Languages :fox_face:
+
+------------
+English - C1\
+Ukrainian - B2\
+Russian - Native
