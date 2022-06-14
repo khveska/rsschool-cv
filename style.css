@@ -36,7 +36,8 @@
   box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
   height: 100%;
 }
 
@@ -45,7 +46,7 @@ body {
   background-color: var(--background-color);
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
@@ -134,8 +135,8 @@ section {
   margin-bottom: 15px;
 }
 
-#about>.section-name::after {
-  content: "";
+#about > .section-name::after {
+  content: '';
   position: absolute;
   left: 0;
   top: 110%;
@@ -148,7 +149,7 @@ section {
   align-items: center;
 }
 
-.contact-item>i {
+.contact-item > i {
   padding-right: 5px;
 }
 
@@ -161,7 +162,7 @@ p {
   font-weight: 600;
 }
 
-.skill-category>span {
+.skill-category > span {
   padding-left: 5px;
   font-weight: normal;
 }
@@ -204,7 +205,7 @@ footer {
   text-decoration: none;
 }
 
-.github-link:hover > #github-logo > g  {
+.github-link:hover > #github-logo > g {
   fill: var(--background-color);
 }
 
@@ -226,7 +227,8 @@ footer {
     --content-padding: 0 30px;
   }
 
-  .cv-wrapper, footer {
+  .cv-wrapper,
+  footer {
     width: 100vw;
   }
 
@@ -239,6 +241,7 @@ footer {
 @media (max-width: 620px) {
   :root {
     --content-padding: 0 10px;
+    --logo-dimension: 20px;
   }
 
   nav {
@@ -258,4 +261,7 @@ footer {
     max-height: 150px;
   }
 
+  .rsschool-link {
+    width: 50px;
+  }
 }
