@@ -1,13 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My CV</title>
-  </head>
-  <body>
-    <div class="container"></div>
-  </body>
+    <title>Khveska's CV</title>
+    <link rel="shortcut icon" href="./assets/img/woman_tech.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="cv-wrapper">
+        <header>
+            <div id="name-and-title">
+                <h1 id="name">ALEX VOL</h1>
+                <h2 id="title">SOON-TO-BE FRONTEND DEVELOPER</h2>
+            </div>
+            <img id="avatar" src="./assets/img/user_avatar.png" alt="User Avatar" />
+        </header>
+        <main>
+            <nav id="navigation-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#english">English</a></li>
+                </ul>
+            </nav>
+
+            <div class="sections-wrapper">
+                <section id="contacts">
+                    <h2 class="section-name">CONTACTS</h2>
+                    <p class="contact-item">
+                        <i class="material-icons">discord</i>
+                        khveska#5589
+                    </p>
+                    <p class="contact-item"><i class="material-icons">mail</i>yazukata.khveska@gmail.com</p>
+                </section>
+                <section id="about">
+                    <h2 class="section-name">ABOUT</h2>
+                    <p>
+                        I'm a keen learner and after some deliberate thoughts, I chose to make an attempt to pursue
+                        Frontend
+                        Development path since it involves frequent gain of new information and has low chances in
+                        allowing you to
+                        become rusty during your career. Javascript/Typescript is fast evolving language and in
+                        connection with
+                        other web development tools gives an oportunity to create amazing websites, solve different
+                        tasks (e.g.
+                        complex math problems) and in overall gives you general awareness what is this magic behind web
+                        pages
+                        being visited by you daily.
+                    </p>
+                </section>
+                <section id="skills">
+                    <h2 class="section-name">SKILLS</h2>
+                    <div class="skills-wrapper">
+                        <p class="skill-category">Programming languages:</p>
+                        <p>Java, Javascript (novice)</p>
+                        <p class="skill-category">Web development:</p>
+                        <p>HTML, CSS (novice)</p>
+                        <p class="skill-category">Version control:<span>Git</span></p>
+                        <p class="skill-category">CI:<span>GitHub, GitLab</span></p>
+                    </div>
+                </section>
+                <section id="code">
+                    <h2 class="section-name">CODE</h2>
+                    <p class="code-description">Kata example from CodeWars</p>
+                    <pre>
+                <code>
+<b>const</b> vowels = ['a', 'e', 'i', 'o', 'u'];
+<b>const</b> getCount = (inputStr) => {
+  <b>return</b> inputStr.split('').reduce((count, curLetter) => {
+    <b>return</b> count + vowels.includes(curLetter)
+  }, 0)
+}
+                </code>
+            </pre>
+                </section>
+                <section id="education">
+                    <h2 class="section-name">EDUCATION</h2>
+                    <p>Belarusian State University of Informatics and Radioelectronics</p>
+                </section>
+                <section id="projects">
+                    <h2 class="section-name">PROJECTS</h2>
+                    <a href="https://github.com/khveska/rsschool-cv/tree/gh-pages">CV (link to the current project)</a>
+                </section>
+                <section id="english">
+                    <h2 class="section-name">ENGLISH</h2>
+                    <p>C1</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <a class="github-link" href="https://github.com/khveska">
+                <svg id="github-logo" viewBox="0 0 956.000000 980.000000">
+                    <g transform="translate(0.000000,980.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+                    <path
+                        d="M4450 9789 c-1348 -91 -2625 -795 -3453 -1901 -195 -262 -326 -476 -477 -783 -271 -550 -422 -1079 -492 -1720 -18 -162 -18 -808 0 -970 94 -862 364 -1614 823 -2295 773 -1150 1989 -1909 3325 -2079 1121 -143 2222 109 3164 724 1131 737 1906 1927 2140 3281 56 324 65 443 65 859 -1 414 -9 520 -65 850 -175 1013 -650 1935 -1371 2655 -974 974 -2292 1471 -3659 1379z m530 -259 c1044 -53 1977 -434 2766 -1131 641 -567 1129 -1344 1373 -2191 70 -243 123 -510 157 -798 21 -184 30 -654 15 -850 -79 -1030 -459 -1956 -1121 -2730 -208 -243 -531 -540 -792 -727 -287 -206 -689 -424 -1013 -549 -138 -54 -157 -58 -231 -59 -72 0 -85 3 -129 30 -35 22 -56 44 -74 80 l-26 50 3 680 c4 687 -1 833 -33 988 -37 179 -112 345 -205 456 -33 39 -60 73 -60 75 0 2 30 6 67 10 315 32 693 136 948 261 356 173 603 413 779 755 187 364 265 769 253 1302 -4 199 -9 251 -31 355 -62 292 -172 528 -352 759 l-72 93 24 76 c94 297 81 696 -34 1040 l-37 110 -99 3 c-256 7 -610 -131 -1022 -399 l-121 -79 -147 35 c-369 89 -658 119 -1071 112 -370 -7 -616 -38 -928 -118 l-118 -31 -122 80 c-285 185 -539 308 -765 368 -79 22 -121 27 -227 28 l-130 1 -23 -65 c-39 -108 -80 -278 -98 -405 -30 -222 -7 -516 55 -698 l20 -58 -73 -93 c-180 -231 -289 -466 -352 -759 -23 -108 -27 -151 -31 -377 -4 -193 -1 -293 11 -410 74 -698 336 -1189 804 -1503 263 -177 649 -312 1057 -372 61 -8 125 -18 143 -21 l33 -5 -38 -42 c-97 -105 -170 -251 -214 -424 -16 -63 -29 -124 -29 -134 0 -21 -29 -36 -160 -79 -238 -78 -475 -79 -675 -1 -185 71 -317 193 -477 436 -80 122 -126 179 -189 240 -182 174 -359 252 -549 243 -94 -5 -144 -24 -162 -63 -23 -50 53 -134 224 -249 151 -101 307 -314 414 -566 78 -183 88 -203 135 -275 150 -232 383 -384 689 -451 125 -28 450 -26 610 4 63 11 117 18 120 16 3 -3 5 -198 5 -433 l0 -427 -30 -49 c-43 -69 -105 -100 -200 -99 -59 0 -92 9 -208 53 -1538 581 -2660 1988 -2906 3641 -38 258 -46 379 -46 710 0 331 8 452 46 710 165 1108 728 2126 1579 2855 744 637 1692 1016 2665 1064 222 12 215 12 425 1z" />
+                </g>
+
+                    </svg>
+                <span>khveska</span>
+            </a>
+            <p>2022</p>
+            <a class="rsschool-link" href="https://rs.school/js/">
+                <svg id="rsschool-logo" viewBox="0 0 552.8 205.3">
+                    <path
+                        d="M285.4 68l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z" />
+                    <path
+                        d="M133 167.2l24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z" />
+                    <path
+                        d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z" />
+                    <path d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z" />
+                    <ellipse transform="rotate(-37.001 420.46 67.88)" stroke="#000" stroke-width="3" cx="420.5"
+                        cy="67.9" rx="63" ry="51.8" />
+                    <path
+                        d="M392.4 61.3l10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1l9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z" />
+                </svg>
+            </a>
+        </footer>
+    </div>
+</body>
+
 </html>
