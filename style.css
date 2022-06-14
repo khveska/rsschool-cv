@@ -222,22 +222,40 @@ footer {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --content-padding: 0 30px;
+  }
+
   .cv-wrapper, footer {
-    width: 600px;
+    width: 100vw;
   }
 
   .sections-wrapper {
     grid-template-columns: auto;
-    padding: 0 40px;
+    justify-content: center;
   }
 }
 
 @media (max-width: 620px) {
-  .cv-wrapper, footer {
-    width: 500px;
+  :root {
+    --content-padding: 0 10px;
   }
 
-  .sections-wrapper {
-    padding: 0 20px;
+  nav {
+    font-size: 0.7em;
   }
+
+  pre {
+    font-size: 0.8em;
+  }
+
+  header {
+    font-size: 0.6em;
+  }
+
+  #avatar {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
 }
