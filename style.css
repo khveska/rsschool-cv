@@ -228,11 +228,16 @@ footer {
 
   .sections-wrapper {
     grid-template-columns: auto;
+    padding: 0 40px;
   }
 }
 
 @media (max-width: 620px) {
   .cv-wrapper, footer {
     width: 500px;
+  }
+
+  .sections-wrapper {
+    padding: 0 20px;
   }
 }
