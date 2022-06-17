@@ -99,9 +99,12 @@ nav {
 }
 
 ul {
+  list-style-type: none;
+}
+
+#navigation-menu ul {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
 }
 
 a {
